@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task Manager</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Task Management App</h1>
+<button id="themeToggle">Toggle Theme</button>
+</header>
+
+<section class="form-section">
+<h2>Add / Edit Task</h2>
+
+<form id="taskForm">
+<input type="hidden" id="taskId">
+
+<input type="text" id="title" placeholder="Task Title">
+<textarea id="description" placeholder="Task Description"></textarea>
+
+<select id="priority">
+<option value="">Priority</option>
+<option value="Low">Low</option>
+<option value="Medium">Medium</option>
+<option value="High">High</option>
+</select>
+
+<select id="category">
+<option value="">Category</option>
+<option value="Personal">Personal</option>
+<option value="Work">Work</option>
+<option value="Urgent">Urgent</option>
+</select>
+
+<button type="submit">Save Task</button>
+</form>
+</section>
+
+<section class="controls">
+<input type="text" id="search" placeholder="Search Tasks">
+
+<select id="filterCategory">
+<option value="All">All Categories</option>
+<option value="Personal">Personal</option>
+<option value="Work">Work</option>
+<option value="Urgent">Urgent</option>
+</select>
+</section>
+
+<section>
+<ul id="taskList"></ul>
+</section>
+
+<div id="notification"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
